@@ -6,6 +6,7 @@ int main()
   int numCasasTorre = 5;
   int numCasasBispo = 8;
   int numCasasRainha = 8;
+  int numMovimentosCavalo = 1;
 
   // Movimento da Torre
   printf("\nTorre: \n");
@@ -28,13 +29,25 @@ int main()
   printf("\n=============================\n");
 
   // Movimento da Rainha
-  printf("Rainha: ");
+  printf("\nRainha: ");
   int contadorRainha = 0;
   do
   {
     printf("\nesquerda\n"); // Exibe a direção do movimento da Rainha
     contadorRainha++;       // Incrementa o contador
   } while (contadorRainha <= numCasasRainha); // Executa pelo menos uma vez e continua enquanto a condição for verdadeira
-
+  printf("\n=============================\n");
+  // Cavalo
+  printf("Cavalo: \n");
+  for (int i = 0; i < numMovimentosCavalo; i++) // aqio, o loop externo diz quantos "L's" o cavalo vai fazer
+  {
+    int quantidadeDeCasas = 0;
+    while (quantidadeDeCasas < 2) // quantidade de casas para baixo
+    {
+      printf("\nBaixo\n");
+      quantidadeDeCasas++;
+    }
+    printf("\nEsquerda\n");
+  }
   return 0;
 }
